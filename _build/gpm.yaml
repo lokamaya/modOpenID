@@ -2,7 +2,7 @@ name: modOpenID
 version: 0.0.1-alpha
 lowCaseName: modopenid
 namespace: modOpenID
-description: 'Enabling single sign-on (SSO) on MODX using OpenID.'
+description: 'Enabling Single Sign-On (SSO) on MODX using OpenID Connect.'
 author: '@lokamaya <Zaenal Muttaqin>'
 menus:
     -
