@@ -4,7 +4,56 @@ lowCaseName: modopenid
 namespace: modOpenID
 description: 'Enabling Single Sign-On (SSO) on MODX using OpenID Connect.'
 author: '@lokamaya <Zaenal Muttaqin>'
+
 menus:
     -
         text: modopenid.menu
+        description: modopenid.menu_desc
         action: manage
+
+systemSettings:
+    -
+        key: client_id
+        area: gateway
+        type: textfield
+        value: 
+    -
+        key: client_secret
+        area: gateway
+        type: textfield
+        value: 
+    -
+        key: provider_url
+        area: gateway
+        type: textfield
+        value: https://to-your-provider.net/realm/myrealm
+    -
+        key: http_proxy
+        area: gateway
+        type: textfield
+        value: 
+    -
+        key: verify_host
+        area: gateway
+        type: bolean
+        value: true
+    -
+        key: verify_peer
+        area: gateway
+        type: bolean
+        value: true
+    -
+        key: scopes
+        area: system
+        type: textfield
+        value: 
+    -
+        key: certpath
+        area: system
+        type: textfield
+        value: 
+    -
+        key: debug
+        area: system
+        type: bolean
+        value: false
