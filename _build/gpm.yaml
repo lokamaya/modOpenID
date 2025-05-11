@@ -26,7 +26,7 @@ systemSettings:
         key: provider_url
         area: gateway
         type: textfield
-        value: https://to-your-provider.net/realm/myrealm
+        value: https://your-provider.net/realm/myrealm
     -
         key: http_proxy
         area: gateway
@@ -35,18 +35,13 @@ systemSettings:
     -
         key: verify_host
         area: gateway
-        type: bolean
+        type: combo-boolean
         value: true
     -
         key: verify_peer
         area: gateway
-        type: bolean
+        type: combo-boolean
         value: true
-    -
-        key: scopes
-        area: system
-        type: textfield
-        value: 
     -
         key: certpath
         area: system
@@ -55,5 +50,20 @@ systemSettings:
     -
         key: debug
         area: system
-        type: bolean
+        type: combo-boolean
         value: false
+    -
+        key: login_redirect
+        area: system
+        type: textfield
+        value: 
+    -
+        key: logout_redirect
+        area: system
+        type: textfield
+        value: 
+    -
+        key: scopes
+        area: system
+        type: textfield
+        value: 
