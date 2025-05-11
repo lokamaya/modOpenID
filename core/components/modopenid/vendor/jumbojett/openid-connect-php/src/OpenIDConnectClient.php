@@ -319,7 +319,7 @@ class OpenIDConnectClient
             }
 
             // Do an OpenID Connect session check
-	    if (!isset($_REQUEST['state']) || ($_REQUEST['state'] !== $this->getState())) {
+	        if (!isset($_REQUEST['state']) || ($_REQUEST['state'] !== $this->getState())) {
                 throw new OpenIDConnectClientException('Unable to determine state');
             }
 
@@ -1270,7 +1270,7 @@ class OpenIDConnectClient
 
         $response = $this->fetchURL($user_info_endpoint,null,$headers);
         if ($this->getResponseCode() !== 200) {
-            throw new OpenIDConnectClientException('The communication to retrieve user data has failed with status code '.$this->getResponseCode());
+            throw new OpenIDConnectClientException('The communication to retrieve user data has failed with status code '.$this->getResponseCode() . ' and endpoint: ' . $user_info_endpoint);
         }
 
         // When we receive application/jwt, the UserInfo Response is signed and/or encrypted.
