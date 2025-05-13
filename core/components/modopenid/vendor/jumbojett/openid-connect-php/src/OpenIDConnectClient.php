@@ -1265,8 +1265,10 @@ class OpenIDConnectClient
 
         //The accessToken has to be sent in the Authorization header.
         // Accept json to indicate response type
-        $headers = ["Authorization: Bearer $this->accessToken",
-            'Accept: application/json'];
+        $headers = [
+        	"Authorization: Bearer $this->accessToken",
+            'Accept: application/json'
+            ];
 
         $response = $this->fetchURL($user_info_endpoint,null,$headers);
         if ($this->getResponseCode() !== 200) {
