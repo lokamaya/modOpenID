@@ -14,56 +14,91 @@ menus:
 systemSettings:
     -
         key: client_id
-        area: gateway
+        area: openid_provider
         type: textfield
         value: 
     -
         key: client_secret
-        area: gateway
+        area: openid_provider
+        type: textfield
+        value: 
+    -
+        key: provider_name
+        area: openid_provider
+        type: textfield
+        value: 
+    -
+        key: provider_xproxy
+        area: openid_provider
         type: textfield
         value: 
     -
         key: provider_url
-        area: gateway
+        area: openid_provider
         type: textfield
-        value: https://your-provider.net/realm/myrealm
+        value: https://sso-provider.net/realm/myrealm
     -
-        key: http_proxy
-        area: gateway
-        type: textfield
-        value: 
-    -
-        key: verify_host
-        area: gateway
-        type: combo-boolean
-        value: true
-    -
-        key: verify_peer
-        area: gateway
-        type: combo-boolean
-        value: true
-    -
-        key: certpath
-        area: system
+        key: provider_xproxy
+        area: openid_provider
         type: textfield
         value: 
     -
         key: debug
-        area: system
+        area: openid_provider_setting
         type: combo-boolean
         value: false
     -
-        key: login_redirect
-        area: system
+        key: certpath
+        area: openid_provider_setting
         type: textfield
         value: 
     -
-        key: logout_redirect
-        area: system
+        key: session_iframe
+        area: openid_provider_setting
         type: textfield
-        value: 
+        value: /protocol/openid-connect/login-status-iframe.html
+    -
+        key: verify_host
+        area: openid_provider_setting
+        type: combo-boolean
+        value: true
+    -
+        key: verify_peer
+        area: openid_provider_setting
+        type: combo-boolean
+        value: true
     -
         key: scopes
-        area: system
+        area: openid_provider_setting
         type: textfield
-        value: 
+        value: openid, profile
+    -
+        key: page_login
+        area: openid_resources
+        type: textfield
+        value: 4
+    -
+        key: page_login_redirect
+        area: openid_resources
+        type: textfield
+        value: 0
+    -
+        key: page_logout
+        area: openid_resources
+        type: textfield
+        value: 5
+    -
+        key: page_logout_redirect
+        area: openid_resources
+        type: textfield
+        value: 1
+    -
+        key: page_session_iframe
+        area: openid_resources
+        type: textfield
+        value: 6
+    -
+        key: page_sso
+        area: openid_resources
+        type: textfield
+        value: 3
