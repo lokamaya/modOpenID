@@ -43,11 +43,6 @@ systemSettings:
         type: textfield
         value: 
     -
-        key: debug
-        area: openid_provider_setting
-        type: combo-boolean
-        value: false
-    -
         key: certpath
         area: openid_provider_setting
         type: textfield
