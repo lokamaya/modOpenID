@@ -93,7 +93,7 @@ systemSettings:
         type: textfield
         value: 1
     -
-        key: page_session_iframe
+        key: page_password
         area: openid_resources
         type: textfield
         value: 6
