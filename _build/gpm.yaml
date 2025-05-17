@@ -81,7 +81,12 @@ systemSettings:
         key: page_login_redirect
         area: openid_resources
         type: textfield
-        value: 0
+        value: 2
+    -
+        key: page_login_redirect_last
+        area: openid_resources
+        type: combo-boolean
+        value: false
     -
         key: page_logout
         area: openid_resources
