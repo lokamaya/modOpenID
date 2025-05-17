@@ -43,6 +43,6 @@ $_lang['setting_modopenid.page_logout_redirect_desc'] = 'Resource ID after succe
 $_lang['setting_modopenid.page_session_iframe'] = 'iFrame Page';
 $_lang['setting_modopenid.page_session_iframe_desc'] = 'Resource ID for iframe page, a blank page is fine';
 $_lang['setting_modopenid.page_sso'] = 'SSO Session';
-$_lang['setting_modopenid.page_sso_desc'] = 'Resource ID for SSO folder, for storing OpenID session';
+$_lang['setting_modopenid.page_sso_desc'] = 'Resource ID for SSO folder, for storing OpenID\'s session cookie';
 $_lang['setting_modopenid.scopes'] = 'Scopes of User';
 $_lang['setting_modopenid.scopes_desc'] = 'Scopes used to get detail of current user (see: https://auth0.com/docs/get-started/apis/scopes/openid-connect-scopes)';
